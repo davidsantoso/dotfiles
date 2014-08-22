@@ -74,6 +74,14 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Go Setup
-export GOPATH=$Home/Projects/Go
+export GOROOT="/usr/local/Cellar/go/1.3/libexec"
+export GOPATH=$HOME/code/go
 export PATH=$GOPATH/bin:$PATH
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Via boot2docker
+export DOCKER_HOST=tcp://192.168.59.103:2375
+
+# Set default editor
+export BUNDLER_EDITOR=vim
