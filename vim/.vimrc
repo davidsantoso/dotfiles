@@ -12,6 +12,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'edkolev/tmuxline.vim'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -32,7 +33,9 @@ set autochdir
 
 " Use spaces instead of tabs
 set expandtab
-set tabstop=2
+set shiftwidth=2
+set autoindent
+set smartindent
 
 " Set color scheme
 set t_Co=256
