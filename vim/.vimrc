@@ -32,8 +32,9 @@ set number
 set autochdir
 
 " Use spaces instead of tabs
-set expandtab
+set tabstop=2
 set shiftwidth=2
+set expandtab
 set autoindent
 set smartindent
 
