@@ -13,6 +13,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'tComment'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
