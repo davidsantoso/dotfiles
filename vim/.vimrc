@@ -31,6 +31,9 @@ syntax enable
 " Show line numbers
 set number
 
+" Highlight current line
+set cursorline
+
 " Change to current directory
 set autochdir
 
