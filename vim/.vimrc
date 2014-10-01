@@ -52,13 +52,12 @@ let g:netrw_liststyle=1
 set laststatus=2
 let g:airline_powerline_fonts=1
 
-" highlight trailing spaces in annoying red
+" Highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+
+" Remove any trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
