@@ -14,6 +14,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'tComment'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'terryma/vim-multiple-cursors'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
