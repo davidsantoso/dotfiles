@@ -43,8 +43,8 @@ set autoindent
 set smartindent
 
 " Set color scheme
-set t_Co=256
-color Tomorrow-Night
+set background=dark
+colorscheme hybrid
 
 " Default to list view for netrw
 let g:netrw_liststyle=1
