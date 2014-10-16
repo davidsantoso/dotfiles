@@ -36,7 +36,7 @@ set cursorline
 set autochdir
 
 " Sync with OS X clipboard
-set clipboard^=unnamed
+set clipboard=unnamed
 
 " Backspace
 set backspace=indent,eol,start
