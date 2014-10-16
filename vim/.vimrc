@@ -35,6 +35,9 @@ set cursorline
 " Change to current directory
 set autochdir
 
+" Sync with OS X clipboard
+set clipboard^=unnamed
+
 " Use spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
