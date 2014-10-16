@@ -38,6 +38,9 @@ set autochdir
 " Sync with OS X clipboard
 set clipboard^=unnamed
 
+" Backspace
+set backspace=indent,eol,start
+
 " Use spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
