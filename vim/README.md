@@ -1,5 +1,5 @@
 " .vimrc
-
+```
 set background=dark
 colorscheme base16-railscasts
 
@@ -17,14 +17,14 @@ highlight Visual       ctermbg=3   ctermfg=0
 highlight Pmenu        ctermbg=240 ctermfg=12
 highlight PmenuSel     ctermbg=3   ctermfg=1
 highlight SpellBad     ctermbg=0   ctermfg=1
-
+```
 ---------------------------------------------------------------
 
 For Tmux-
-open railscasts/base16-railscasts-custom.dark.256.itermcolors
+```open railscasts/base16-railscasts-custom.dark.256.itermcolors```
 
 " tmux.conf
-
+```
 set -g default-terminal "screen-256color"
 set -g status-bg colour235
 set -g status-fg white
@@ -36,3 +36,4 @@ set -g pane-border-fg colour235
 set -g pane-border-bg black
 set -g pane-active-border-fg green
 set -g pane-active-border-bg black
+```
