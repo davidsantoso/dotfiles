@@ -25,6 +25,8 @@ filetype plugin indent on
 
 " Enable syntax highlighting
 syntax enable
+set background=dark
+colorscheme base16-railscasts
 
 " Show line numbers
 set number
@@ -48,10 +50,6 @@ set expandtab
 set autoindent
 set smartindent
 
-" Set color scheme
-set background=dark
-colorscheme hybrid
-
 " Default to list view for netrw
 let g:netrw_liststyle=1
 
@@ -69,9 +67,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-
-set background=dark
-colorscheme base16-railscasts
 
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
