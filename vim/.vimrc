@@ -28,6 +28,9 @@ syntax enable
 set background=dark
 colorscheme base16-railscasts
 
+" Force syntax highlighting
+au BufRead,BufNewFile *.es6 set filetype=javascript
+
 " Show line numbers
 set number
 
