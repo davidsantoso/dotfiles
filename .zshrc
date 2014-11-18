@@ -83,3 +83,7 @@ export DOCKER_HOST=tcp://192.168.59.103:2375
 
 # Set default editor
 export BUNDLER_EDITOR=vim
+
+# rbenv setup
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
