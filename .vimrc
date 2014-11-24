@@ -25,11 +25,11 @@ filetype plugin indent on
 
 " Enable syntax highlighting
 syntax enable
+
+" Set theme
 set background=dark
 colorscheme base16-custom
-
-" Force syntax highlighting
-au BufRead,BufNewFile *.es6 set filetype=javascript
+let g:airline_theme='base16'
 
 " Show line numbers
 set number
