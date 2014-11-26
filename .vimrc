@@ -30,6 +30,9 @@ syntax enable
 set background=dark
 colorscheme base16-custom
 let g:airline_theme='base16'
+highlight LineNr       ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLine   ctermbg=236
 
 " Show line numbers
 set number
@@ -70,10 +73,9 @@ match ExtraWhitespace /\s\+$/
 " Remove any trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Don't delay exiting modes
+set timeoutlen=1000 ttimeoutlen=0
+
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-
-highlight LineNr       ctermbg=236 ctermfg=240
-highlight CursorLineNr ctermbg=236 ctermfg=240
-highlight CursorLine   ctermbg=236
