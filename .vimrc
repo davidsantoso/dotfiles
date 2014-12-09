@@ -15,6 +15,7 @@ Plugin 'tComment'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'fatih/vim-go'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
