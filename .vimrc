@@ -24,6 +24,12 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 call vundle#end()
 filetype plugin indent on
 
+" Define leader key as space
+let mapleader = " "
+
+" Move to last file
+nnoremap <leader><leader> <c-^>
+
 " Enable syntax highlighting
 syntax enable
 
