@@ -30,6 +30,10 @@ let mapleader = " "
 " Move to last file
 nnoremap <leader><leader> <c-^>
 
+" set ctags file location
+set tags=tags;/
+map <leader>rt :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)<cr>
+
 " Enable syntax highlighting
 syntax enable
 
