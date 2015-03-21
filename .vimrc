@@ -64,8 +64,6 @@ set clipboard=unnamed
 set backspace=indent,eol,start
 
 " Use spaces instead of tabs
-set tabstop=2
-set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
