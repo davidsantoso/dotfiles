@@ -43,7 +43,7 @@ colorscheme base16-custom
 let g:airline_theme='base16'
 let g:airline_section_c='%F'
 highlight LineNr       ctermbg=236 ctermfg=240
-highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=04 ctermfg=00
 highlight CursorLine   ctermbg=236
 
 " Show line numbers
