@@ -37,10 +37,11 @@ map <leader>rt :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bund
 " Enable syntax highlighting
 syntax enable
 
-" Set theme
+" Set theme and airline config
 set background=dark
 colorscheme base16-custom
 let g:airline_theme='base16'
+let g:airline_section_c='%F'
 highlight LineNr       ctermbg=236 ctermfg=240
 highlight CursorLineNr ctermbg=236 ctermfg=240
 highlight CursorLine   ctermbg=236
