@@ -44,9 +44,9 @@ syntax enable
 set background=dark
 colorscheme base16-custom
 let g:airline_theme='base16'
-highlight LineNr       ctermbg=236 ctermfg=240
+highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
-highlight CursorLine   ctermbg=236
+highlight CursorLine   ctermbg=237
 
 " Show line numbers
 set number
