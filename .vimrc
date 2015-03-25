@@ -16,6 +16,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
+Plugin 'skalnik/vim-vroom'
+Plugin 'vim-scripts/ctags.vim'
+Plugin 'tmhedberg/matchit'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -24,10 +27,10 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 call vundle#end()
 filetype plugin indent on
 
-" Define leader key as space
+" Map leader kep to space
 let mapleader = " "
 
-" Move to last file
+" move to last file
 nnoremap <leader><leader> <c-^>
 
 " set ctags file location
@@ -37,11 +40,10 @@ map <leader>rt :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bund
 " Enable syntax highlighting
 syntax enable
 
-" Set theme and airline config
+" Set theme
 set background=dark
 colorscheme base16-custom
 let g:airline_theme='base16'
-let g:airline_section_c='%F'
 highlight LineNr       ctermbg=236 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
 highlight CursorLine   ctermbg=236
@@ -65,16 +67,19 @@ set clipboard=unnamed
 set backspace=indent,eol,start
 
 " Use spaces instead of tabs
+" set tabstop=2
+" set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
 
 " Default to list view for netrw
-let g:netrw_liststyle=1
+let g:netrw_liststyle=4
 
 " Airline configuation
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_section_c='%F'
 
 " Highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
