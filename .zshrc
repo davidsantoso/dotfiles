@@ -79,6 +79,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias to default ag to use green instead of the default which
+# for my themeing is really really dark grey and not readable
+alias ag="ag --color-path 32"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
