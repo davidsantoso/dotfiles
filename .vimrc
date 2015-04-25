@@ -19,6 +19,7 @@ Plugin 'fatih/vim-go'
 Plugin 'skalnik/vim-vroom'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'tmhedberg/matchit'
+Plugin 'elixir-lang/vim-elixir'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
