@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="davidsantoso"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,11 +83,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # for my themeing is really really dark grey and not readable
 alias ag="ag --color-path 32"
 
+# git aliases
+alias gpffo="git pull --ff-only"
+alias grbm="git rebase master"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# boot2docker setup
-# Might need to change to $(boot2docker shellinit)
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/davidsantoso/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
