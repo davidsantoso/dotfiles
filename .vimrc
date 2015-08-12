@@ -20,6 +20,7 @@ Plugin 'skalnik/vim-vroom'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'rhysd/vim-crystal'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
