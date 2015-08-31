@@ -49,6 +49,9 @@ highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
 highlight CursorLine   ctermbg=237
 
+" Get rid of the default mode indicator
+set noshowmode
+
 " Show line numbers
 set number
 
