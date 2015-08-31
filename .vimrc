@@ -10,6 +10,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tComment'
 Plugin 'kien/ctrlp.vim'
@@ -30,14 +31,13 @@ call vundle#end()
 filetype plugin indent on
 
 " Map leader kep to space
-let mapleader = " "
+let mapleader=" "
 
 " move to last file
 nnoremap <leader><leader> <c-^>
 
 " set ctags file location
 set tags=tags;/
-map <leader>rt :!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)<cr>
 
 " Enable syntax highlighting
 syntax enable
@@ -45,7 +45,6 @@ syntax enable
 " Set theme
 set background=dark
 colorscheme base16-custom
-let g:airline_theme='base16'
 highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
 highlight CursorLine   ctermbg=237
@@ -76,7 +75,7 @@ set autoindent
 set smartindent
 
 " Use relative line numbers
-:set relativenumber
+set relativenumber
 
 " Default to list view for netrw
 let g:netrw_liststyle=4
@@ -93,7 +92,7 @@ match ExtraWhitespace /\s\+$/
 " Remove any trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Don't delay exiting modes
+" Make changing modes zippy
 set timeoutlen=1000 ttimeoutlen=0
 
 " configure syntastic syntax checking to check on open as well as save
