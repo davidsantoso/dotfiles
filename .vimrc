@@ -32,72 +32,59 @@ filetype plugin indent on
 
 " Map leader kep to space
 let mapleader=" "
-
-" move to last file
+" Use jj for escape mode
+inoremap jj <esc>
+" Move to last file
 nnoremap <leader><leader> <c-^>
-
-" set ctags file location
-set tags=tags;/
-
 " Enable syntax highlighting
 syntax enable
-
 " Set theme
 set background=dark
 colorscheme base16-custom
 highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
 highlight CursorLine   ctermbg=237
-
+" set ctags file location
+set tags=tags;/
 " Get rid of the default mode indicator
 set noshowmode
-
 " Show line numbers
 set number
-
 " Highlight current line
 set cursorline
-
 " Change to current directory
 set autochdir
-
 " Vim shame. But, sometimes I just want it
 set mouse=a
-
 " Sync with OS X clipboard
 set clipboard=unnamed
-
 " Backspace
 set backspace=indent,eol,start
-
 " Use spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
-
 " Use relative line numbers
 set relativenumber
-
+" Show matching [{()}]
+set showmatch
+" search as characters are entered
+set incsearch
+" Make changing modes zippy
+set timeoutlen=1000 ttimeoutlen=0
 " Default to list view for netrw
 let g:netrw_liststyle=4
-
 " Airline configuation
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%F'
-
-" Highlight trailing spaces in annoying red
-highlight ExtraWhitespace ctermbg=1 guibg=red
-match ExtraWhitespace /\s\+$/
-
-" Remove any trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-" Make changing modes zippy
-set timeoutlen=1000 ttimeoutlen=0
-
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+" Highlight trailing spaces in annoying red
+highlight ExtraWhitespace ctermbg=1 guibg=red
+match ExtraWhitespace /\s\+$/
+" Remove any trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
