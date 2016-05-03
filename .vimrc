@@ -43,7 +43,7 @@ set background=dark
 colorscheme base16-custom
 highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
-"highlight CursorLine   ctermbg=237
+highlight CursorLine   ctermbg=00
 " set ctags file location
 set tags=tags;/
 " Get rid of the default mode indicator
@@ -82,7 +82,7 @@ let g:netrw_list_hide= '.*\.swp$'
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%F'
-let g:airline_theme='base16_davidsantoso'
+let g:airline_theme='hybrid'
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
