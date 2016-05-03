@@ -20,7 +20,7 @@ Plugin 'fatih/vim-go'
 Plugin 'skalnik/vim-vroom'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'tmhedberg/matchit'
-Plugin 'elixir-lang/vim-elixir'
+Plugin 'davidsantoso/vim-elixir'
 Plugin 'rhysd/vim-crystal'
 
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -43,7 +43,7 @@ set background=dark
 colorscheme base16-custom
 highlight LineNr       ctermbg=237 ctermfg=240
 highlight CursorLineNr ctermbg=04 ctermfg=00
-highlight CursorLine   ctermbg=237
+"highlight CursorLine   ctermbg=237
 " set ctags file location
 set tags=tags;/
 " Get rid of the default mode indicator
@@ -76,10 +76,13 @@ set incsearch
 set timeoutlen=1000 ttimeoutlen=0
 " Default to list view for netrw
 let g:netrw_liststyle=4
+" Hide swp files
+let g:netrw_list_hide= '.*\.swp$'
 " Airline configuation
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%F'
+let g:airline_theme='base16_davidsantoso'
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
@@ -88,3 +91,5 @@ highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
 " Remove any trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+" Ctrlp Ignore directories
+let g:ctrlp_custom_ignore='DS_Store\|node_modules\|vendor\|git\|tmp'
