@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'edkolev/tmuxline.vim'
@@ -82,7 +83,7 @@ let g:netrw_list_hide= '.*\.swp$'
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%F'
-let g:airline_theme='hybrid'
+let g:airline_theme='cool'
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
@@ -92,4 +93,8 @@ match ExtraWhitespace /\s\+$/
 " Remove any trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 " Ctrlp Ignore directories
-let g:ctrlp_custom_ignore='DS_Store\|node_modules\|vendor\|git\|tmp'
+let g:ctrlp_custom_ignore='DS_Store\|node_modules\|vendor\|git\|tmp\|_build'
+" Ctrlp start in current directory or nearest git directory
+let g:ctrlp_working_path_mode = 'ra'
+" Don't clear the screen when closing vim
+" set t_ti= t_te=
