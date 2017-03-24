@@ -63,6 +63,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # else
 #   export EDITOR='mvim'
 # fi
+EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
