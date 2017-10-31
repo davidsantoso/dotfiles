@@ -34,7 +34,7 @@ filetype plugin indent on
 " Map leader kep to space
 let mapleader=" "
 " Use jj for escape mode
-inoremap jj <esc>
+inoremap ;; <esc>
 " Move to last file
 nnoremap <leader><leader> <c-^>
 " Enable syntax highlighting
@@ -67,6 +67,8 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
+" Split to the right
+set splitright
 " Use relative line numbers
 set relativenumber
 " Show matching [{()}]
