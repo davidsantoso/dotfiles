@@ -6,23 +6,21 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'tComment'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'fatih/vim-go'
 Plugin 'skalnik/vim-vroom'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'davidsantoso/vim-elixir'
-Plugin 'rhysd/vim-crystal'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -100,3 +98,5 @@ let g:ctrlp_custom_ignore='DS_Store\|node_modules\|vendor\|git\|tmp\|_build'
 let g:ctrlp_working_path_mode = 'ra'
 " Don't clear the screen when closing vim
 " set t_ti= t_te=
+" NERDtree window size
+let NERDTreeWinSize=1
