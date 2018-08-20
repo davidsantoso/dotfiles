@@ -100,3 +100,5 @@ let g:ctrlp_working_path_mode = 'ra'
 " set t_ti= t_te=
 " NERDtree window size
 let NERDTreeWinSize=1
+" NERDtree show hidden files by default
+let NERDTreeShowHidden=1
