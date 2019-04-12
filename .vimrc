@@ -21,6 +21,8 @@ Plugin 'skalnik/vim-vroom'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'davidsantoso/vim-elixir'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
