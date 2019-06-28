@@ -88,5 +88,7 @@ alias ag="ag --color-path 32"
 alias gpffo="git pull --ff-only"
 alias grbm="git rebase master"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# exa alias
+alias ll="exa -la"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
