@@ -8,6 +8,8 @@ These are my dotfiles. Just clone and symlink and you should be fairly good to g
 * Install oh-my-zsh
 * Symlink the `.zshrc` to $HOME.
 * Add the `davidsantoso.zsh-theme` to the oh-my-zsh theme directory.
+* Install Vundle
+* Install Plugins
 * Symlink `.vimrc` to $HOME.
-* Copy `vim/colors/base16-custom.vim` to $HOME.
+* Copy `base16-custom.vim` to `.vim/colors/base16-custom.vim`.
 
