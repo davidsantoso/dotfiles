@@ -58,7 +58,7 @@ set autochdir
 " Vim shame. But, sometimes I just want it
 set mouse=a
 " Sync with OS X clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
 " Backspace
 set backspace=indent,eol,start
 " Use spaces instead of tabs
